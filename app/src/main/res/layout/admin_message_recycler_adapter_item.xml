@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_5_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.app.aptap.ui.CircleImageView
+                android:layout_width="@dimen/home_profile_image_h_w"
+                android:layout_height="@dimen/home_profile_image_h_w"
+                android:padding="@dimen/padding_5_dp"
+                android:src="@drawable/events"
+                android:layout_gravity="center"
+                app:civ_border_color="@color/headerColor"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/messageTitle"
+                        style="@style/TextViewStyleTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textMultiLine"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:text="Aditya Narayan Mishra"
+                        android:textAppearance="@style/signUpButtonStyle" />
+
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/messageDateTime"
+                        style="@style/TextViewStyleDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight=".5"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textMultiLine"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="12:45 AM"
+                        android:textAppearance="@style/signUpButtonStyle" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/adminMessageDescritption"
+                        style="@style/TextViewStyleContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight=".2"
+                        android:gravity="left|center_vertical"
+                        android:inputType="textMultiLine"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:text="Aditya Narayan Mishra Aditya Narayan Mishra Aditya Narayan Mishra Aditya \n Narayan Mishra Aditya Narayan Mishra Aditya Narayan Mishra"
+                        android:textAppearance="@style/signUpButtonStyle" />
+
+                    <ImageView
+                        android:id="@+id/adminMessageStatus"
+                        android:layout_width="@dimen/home_action_image_h_w"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:src="@drawable/like_select" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="location_names">
+        <item>Pune</item>
+        <item>Delhi</item>
+        <item>Mumbai</item>
+        <item>Dhanbad</item>
+    </string-array>
+
+
+    <string-array name="days_names">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+    <string-array name="interests_names">
+        <item>Sports</item>
+        <item>Beauty products</item>
+        <item>Reading</item>
+        <item>Business</item>
+        <item>Automobiles</item>
+        <item>Gossips</item>
+        <item>Decorations</item>
+        <item>Finance</item>
+        <item>Movies</item>
+        <item>Finearts</item>
+        <item>Food</item>
+        <item>Gadgets</item>
+        <item>Fitness</item>
+        <item>Music</item>
+        <item>Investment</item>
+        <item>Health</item>
+        <item>Pets</item>
+        <item>Gaming</item>
+    </string-array>
+
+</resources>

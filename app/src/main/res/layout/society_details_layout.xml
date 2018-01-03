@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/societyDetailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_10_dp"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/gasCylinder"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/gasMeter"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/gasCylinder"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/signup_gas_meter"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/waterMeterIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/waterMeter"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/waterMeterIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/signup_water_meter"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+</LinearLayout>

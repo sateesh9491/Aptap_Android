@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_notification"
+        android:icon="@drawable/notification1"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:orderInCategory="100"
+        android:title="@string/action_notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search1"
+        android:orderInCategory="200"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:title="Search"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/share"
+        android:orderInCategory="200"
+        android:title="Search"
+        android:visible="false"
+        app:showAsAction="always"></item>
+
+</menu>

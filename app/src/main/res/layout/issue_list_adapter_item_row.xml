@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/issueRowId"
+    android:paddingRight="@dimen/padding_5_dp"
+    android:paddingLeft="@dimen/padding_5_dp"
+    android:orientation="horizontal">
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/issueId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.15"
+        android:gravity="center_vertical"
+        android:text="@string/issue_header_id" />
+
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/issueType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".95"
+        android:gravity="center_vertical"
+        android:text="@string/issue_header_type" />
+
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/issue_header_category" />
+
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.15"
+        android:gravity="center_vertical"
+        android:text="@string/issue_header_status" />
+
+
+</LinearLayout>

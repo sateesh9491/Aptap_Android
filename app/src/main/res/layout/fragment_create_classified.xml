@@ -1,0 +1,426 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="com.app.aptap.fragment.CreateClassifiedFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_10_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+                <com.app.aptap.ui.CircleImageView
+                    android:layout_width="@dimen/home_profile_image_h_w"
+                    android:layout_height="@dimen/home_profile_image_h_w"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/events"
+                    app:civ_border_color="@color/headerColor"
+                    app:civ_border_width="2dp" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/classfiedName"
+                    style="@style/TextViewStyleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_5_dp"
+                    android:textStyle="bold"
+                    android:text="Name">
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomTextView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/classifiedTitle"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10_dp"
+                    android:layout_marginRight="@dimen/margin_10_dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/create_classified_title_name"
+                    android:inputType="numberSigned">
+
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_10_dp"
+                    android:layout_marginRight="@dimen/margin_10_dp">
+
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/issueTitle"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="@string/text_issue_title"
+                        android:inputType="numberSigned">
+
+                    </com.app.aptap.ui.CustomEditText>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="horizontal">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/classifiedCategoryType"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/issue_header_category"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/classifiedCtegoryTypeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="horizontal">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/classifiedType"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/create_classified_title_type"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/classifiedTypeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="vertical">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/descriptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_issue_description" />
+
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/inputDescription"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="left"
+                        android:hint="@string/text_type_here"
+                        android:inputType="text"></com.app.aptap.ui.CustomEditText>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <LinearLayout
+                    android:id="@+id/uploadPicLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_5_dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_10_dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/post_icon_h_w"
+                            android:layout_height="@dimen/post_icon_h_w"
+                            android:layout_weight=".5"
+                            android:src="@drawable/ic_menu_gallery" />
+
+                        <com.app.aptap.ui.CustomTextView
+                            style="@style/TextViewStyleTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@drawable/edit_text_grey_ul"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:text="@string/create_classified_title_upload_pic"></com.app.aptap.ui.CustomTextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/post_icon_h_w"
+                            android:layout_height="@dimen/post_icon_h_w"
+                            android:layout_weight=".5"
+                            android:src="@drawable/price_tag" />
+
+                        <com.app.aptap.ui.CustomTextView
+                            style="@style/TextViewStyleTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@drawable/edit_text_grey_ul"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:text="@string/create_classified_title_place"></com.app.aptap.ui.CustomTextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/colorWhite">
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/firstNameIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/user" />
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/firstName"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/firstNameIcon"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="@string/create_classified_title_user_name"
+                        android:inputType="text"
+                        android:padding="@dimen/padding_5_dp">
+
+                        <!--<requestFocus />-->
+                    </com.app.aptap.ui.CustomEditText>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/phoneIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/phone" />
+
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/phoneNumber"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/phoneIcon"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="@string/create_classified_title_mobile"
+                        android:inputType="phone"
+                        android:padding="@dimen/padding_5_dp">
+
+                    </com.app.aptap.ui.CustomEditText>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/locationIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/location" />
+
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/location"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/locationIcon"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/signup_location"
+                        android:inputType="text"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/sendEventButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/submit_button_title"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

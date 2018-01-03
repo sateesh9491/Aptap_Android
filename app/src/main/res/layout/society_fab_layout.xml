@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSocietyPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:src="@drawable/fab"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorWhite"
+        app:fabSize="normal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSocietyComplaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:src="@drawable/more_select"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorWhite"
+        app:fabSize="normal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSocietyEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:src="@drawable/events_select"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorWhite"
+        app:fabSize="normal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSocietyPolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:src="@drawable/polls_select"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorWhite"
+        app:fabSize="normal" />
+
+
+</FrameLayout>

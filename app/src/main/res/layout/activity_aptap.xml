@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/masterLayoutAptapActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.AptapActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/app_icon_margin_login"
+        android:src="@drawable/apptap_logo" />
+
+    <LinearLayout
+        android:id="@+id/fgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/f_sign_in_button"
+            android:layout_width="@dimen/f_g_button_width"
+            android:layout_height="@dimen/f_g_button_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/app_icon_margin_login"
+            android:background="@drawable/facebook_button"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight=".75"
+                android:padding="10dp"
+                android:src="@drawable/faceook" />
+
+            <com.app.aptap.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="@string/login_with_facebook"
+                android:textAppearance="@style/facebookButtonStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/g_sign_in_button"
+            android:layout_width="@dimen/f_g_button_width"
+            android:layout_height="@dimen/f_g_button_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/app_icon_margin_login"
+            android:background="@drawable/google_button"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight=".75"
+                android:padding="10dp"
+                android:src="@drawable/google" />
+
+            <com.app.aptap.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center_vertical"
+                android:text="@string/login_with_google_plus"
+                android:textAppearance="@style/googleButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobileNumberLayout"
+        android:layout_width="@dimen/f_g_button_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:background="@color/colorWhite">
+
+            <!-- ICON -->
+            <ImageView
+                android:id="@+id/mobImage"
+                android:layout_width="@dimen/edit_text_image_height_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_5_dp"
+                android:src="@drawable/phone" />
+
+            <!-- INPUT -->
+            <com.app.aptap.ui.CustomEditText
+                android:id="@+id/mobileNo"
+                style="@style/EditTextStyleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/mobImage"
+                android:background="@drawable/edit_text_grey_ul"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="@string/text_member_mobile"
+                android:inputType="phone"
+                android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:background="@color/hintColor">
+
+        </View>
+
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/sendOTPButton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/app_icon_margin_login"
+            android:background="@drawable/buttons_rounded_corner_bg_white"
+            android:gravity="center"
+            android:text="@string/send_otp_button_title"
+            android:textAppearance="@style/signUpButtonStyle" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/otpLayout"
+        android:layout_width="@dimen/f_g_button_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:background="@color/colorWhite">
+
+            <!-- ICON -->
+            <!--<ImageView
+                android:id="@+id/electricityBillIcon"
+                android:layout_width="@dimen/edit_text_image_height_width"
+                android:layout_height="match_parent"
+                android:padding="@dimen/padding_5_dp"
+                android:src="@drawable/phone" />-->
+
+            <!-- INPUT -->
+            <com.app.aptap.ui.CustomEditText
+                android:id="@+id/otpNo"
+                style="@style/EditTextStyleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/electricityBillIcon"
+                android:background="@drawable/edit_text_grey_ul"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/text_otp"
+                android:inputType="number"
+                android:maxEms="6"
+                android:maxLength="6"
+                android:minEms="6"
+                android:editable="false"
+                android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:background="@color/hintColor">
+
+        </View>
+
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/verifyOTP"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/app_icon_margin_login"
+            android:background="@drawable/buttons_rounded_corner_bg_white"
+            android:gravity="center"
+            android:text="@string/verify_button_title"
+            android:textAppearance="@style/signUpButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

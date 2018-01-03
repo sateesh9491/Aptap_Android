@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/nav_home_title" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/events"
+            android:title="@string/nav_calendar_title" />
+        <item
+            android:id="@+id/nav_archives"
+            android:icon="@drawable/archives"
+            android:title="@string/nav_archives_title" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/administration"
+            android:title="@string/nav_administration_title" />
+
+        <item
+            android:id="@+id/nav_visiter"
+            android:icon="@drawable/security"
+            android:title="@string/nav_security_title" />
+
+        <item
+            android:id="@+id/nav_ice"
+            android:icon="@drawable/contacts"
+            android:title="@string/nav_ice_title" />
+    </group>
+
+
+    <item android:title="Additional">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/setting"
+                android:title="@string/nav_setting_title" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/support"
+                android:title="@string/nav_support_title" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/aboutus"
+                android:title="@string/nav_about_us_title" />
+
+            <item
+                android:id="@+id/nav_web_login"
+                android:icon="@drawable/web_login"
+                android:title="@string/web_login" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/nav_logout_title" />
+        </menu>
+    </item>
+
+</menu>

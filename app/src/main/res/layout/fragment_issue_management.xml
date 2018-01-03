@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrey"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.fragment.IssueManagementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10_dp"
+        android:layout_weight=".5"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/graphCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/issue_management_graph_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".35"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_5_dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.app.aptap.ui.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:gravity="left|center_vertical"
+                        android:text="New" />
+
+                    <Spinner
+                        android:id="@+id/issueGraphFilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".4" />
+
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/issueChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/padding_5_dp"
+                    android:layout_marginLeft="@dimen/padding_5_dp"
+                    android:layout_marginTop="@dimen/padding_5_dp">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|center_vertical"
+                android:layout_marginBottom="@dimen/padding_5_dp"
+                android:layout_marginLeft="@dimen/padding_5_dp"
+                android:layout_marginTop="@dimen/padding_5_dp"
+                android:layout_weight=".65">
+
+                <RelativeLayout
+                    android:id="@+id/issueCircularRL"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom">
+
+                    <ProgressBar
+                        android:id="@+id/issueCircularProgressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="75"
+                        android:progressDrawable="@drawable/issue_circle_for_issue"
+                        android:secondaryProgress="100" />
+
+                    <TextView
+                        android:id="@+id/issueProgressText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/issueCircularProgressbar"
+                        android:layout_alignLeft="@id/issueCircularProgressbar"
+                        android:layout_alignRight="@id/issueCircularProgressbar"
+                        android:layout_alignTop="@id/issueCircularProgressbar"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="1263"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/issueTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/issueCircularProgressbar"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="65% To-go" />
+
+                    <TextView
+                        android:id="@+id/issueTitleTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/issueTitleOne"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="35% Dine-Ins" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10_dp"
+        android:layout_weight=".5"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include layout="@layout/issue_list_header"></include>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_5_dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/issueManagementList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:overScrollMode="always"
+                app:useCompatPadding="true" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

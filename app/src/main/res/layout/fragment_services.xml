@@ -1,0 +1,466 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.aptap.fragment.ServicesFragment">
+
+    <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c9d7d4d4"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/taxi_rl"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/relative_layout_background"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/taxi" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Cabs"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/food_rl"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/relative_layout_background"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/food" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Food"
+                android:textColor="#000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/groceries_rl"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/relative_layout_background"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/groceries" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Groceries"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/utility_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LL"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/billpayment_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Utility Bill Payments"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/electric"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/electricity"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/electric"
+                        android:layout_marginTop="5dp"
+                        android:text="Electric"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/land_line_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/landline"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/land_line_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Land Line"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/gas_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/gas"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gas_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Gas"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/metro_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/metro"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/metro_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Metro"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/data_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/datacard"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/data_card"
+                        android:text="Data Card"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/dth_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/dth"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dth_img"
+                        android:text="DTH"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/utility_Linear"
+        android:background="#86000000"/>
+
+
+    <LinearLayout
+        android:id="@+id/booking_Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/utility_Linear"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/booking_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bookings"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/movie_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/movie"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/movie_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Movies"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bus_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/bus"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bus_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Bus"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/train_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/metro"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/train_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Train"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/flight_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/flight"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/flight_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Flight"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/party_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/events"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/party_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Party"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/car_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:src="@drawable/bike"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/car_img"
+                        android:layout_marginTop="5dp"
+                        android:text="Car/Bike"
+                        android:textAlignment="center" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/booking_Linear"
+        android:background="#86000000"/>
+
+
+</RelativeLayout>

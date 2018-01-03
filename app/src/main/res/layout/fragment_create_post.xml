@@ -1,0 +1,302 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="com.app.aptap.fragment.CreatePostFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+                <com.app.aptap.ui.CircleImageView
+                    android:layout_width="@dimen/home_profile_image_h_w"
+                    android:layout_height="@dimen/home_profile_image_h_w"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/events"
+                    app:civ_border_color="@color/headerColor"
+                    app:civ_border_width="2dp" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/userName"
+                    style="@style/TextViewStyleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_5_dp"
+                    android:textStyle="bold"
+                    android:text="Name">
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomTextView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_title" />
+
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/postTitle"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/post_title_write_msg"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"></com.app.aptap.ui.CustomEditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_description" />
+
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/postDescription"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/post_description_write_msg"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:minLines="3"></com.app.aptap.ui.CustomEditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/padding_5_dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10_dp">
+
+                <LinearLayout
+                    android:id="@+id/uploadPicLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/post_icon_h_w"
+                        android:layout_height="@dimen/post_icon_h_w"
+                        android:layout_weight=".5"
+                        android:src="@drawable/ic_menu_gallery" />
+
+                    <com.app.aptap.ui.CustomTextView
+                        style="@style/TextViewStyleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_post_add_photo"></com.app.aptap.ui.CustomTextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/post_icon_h_w"
+                        android:layout_height="@dimen/post_icon_h_w"
+                        android:layout_weight=".5"
+                        android:src="@drawable/ic_menu_gallery" />
+
+                    <com.app.aptap.ui.CustomTextView
+                        style="@style/TextViewStyleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_post_add_video"></com.app.aptap.ui.CustomTextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/post_icon_h_w"
+                        android:layout_height="@dimen/post_icon_h_w"
+                        android:layout_weight=".5"
+                        android:src="@drawable/price_tag" />
+
+                    <com.app.aptap.ui.CustomTextView
+                        style="@style/TextViewStyleTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:text="@string/text_post_tag"></com.app.aptap.ui.CustomTextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_post_type" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioPostGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/postPublic"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/text_post_public_type" />
+
+                    <RadioButton
+                        android:id="@+id/postPrivate"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_post_private_type" />
+
+                    <RadioButton
+                        android:id="@+id/postSociety"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_post_society_type" />
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:gravity="center"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/updateButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/text_post_send_button"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

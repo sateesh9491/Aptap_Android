@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.aptap.fragment.GroupManagement">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groupRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding_5_dp"
+        android:layout_weight=".36"
+        android:clipToPadding="true"
+        android:overScrollMode="always"
+        android:layout_gravity="center"
+        app:useCompatPadding="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/createGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        app:srcCompat="@drawable/fab"
+        android:visibility="visible"/>
+
+    <include layout="@layout/group_footer_menu" />
+
+</FrameLayout>

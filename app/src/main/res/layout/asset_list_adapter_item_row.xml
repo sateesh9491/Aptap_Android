@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:id="@+id/assetsRowItem"
+    android:orientation="horizontal">
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/issue_header_id" />
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsEmail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_email" />
+
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsType"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_type" />
+
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_capacity" />
+
+
+</LinearLayout>

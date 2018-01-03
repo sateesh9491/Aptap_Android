@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="@dimen/padding_5_dp"
+    android:layout_marginRight="@dimen/padding_5_dp"
+    android:layout_marginTop="@dimen/padding_5_dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/memberHeaderRowColor"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsName"
+        style="@style/TextViewStyleSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_name" />
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsEmail"
+        style="@style/TextViewStyleSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_email" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/assetsType"
+            style="@style/TextViewStyleSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/assets_header_type"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp">
+        </com.app.aptap.ui.CustomTextView>
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/assetsTypeIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/lastName"
+            android:padding="@dimen/padding_5_dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/down_arrow" />
+
+    </RelativeLayout>
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsCapacity"
+        style="@style/TextViewStyleSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_capacity" />
+
+    <!--<com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsMaintenance"
+        style="@style/TextViewStyleSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_maintenance" />
+
+    <com.app.aptap.ui.CustomTextView
+        android:id="@+id/assetsPrice"
+        style="@style/TextViewStyleSubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/assets_header_price" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.activity.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/apptap_logo" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/firstNameIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/user" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/firstName"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/firstNameIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_first_name"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp">
+
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/lastNameIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/user" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/lastName"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/lastNameIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_last_name"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp">
+
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/phoneIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/phone" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/phoneNumber"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/phoneIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_phone"
+                    android:inputType="phone"
+                    android:padding="@dimen/padding_5_dp">
+
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/gmailIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/mail" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/gmailId"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/gmailIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_gmail"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/facebookIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/mail" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/facebookId"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/facebookIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_facebook"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/userHastagIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/user" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/userHashTag"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/userHastagIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/signup_hash_tag"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/dateOfBirthIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/events" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/dateOfBirth"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/signup_date_of_birth"
+                    android:inputType="date"
+                    android:padding="@dimen/padding_5_dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/genderIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/events" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/gender"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/genderIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/signup_gender"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/city_locationIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/location" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/city"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:padding="@dimen/padding_5_dp"
+                    android:inputType="text"/>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/flatNoIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginLeft="@dimen/margin_left_right_10_dp"-->
+                <!--android:layout_marginRight="@dimen/margin_left_right_10_dp"-->
+                <!--android:background="@color/colorWhite">-->
+
+                <!--&lt;!&ndash; ICON &ndash;&gt;-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/locationIcon"-->
+                    <!--android:layout_width="@dimen/edit_text_image_height_width"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:padding="@dimen/padding_5_dp"-->
+                    <!--android:src="@drawable/location" />-->
+
+                <!--&lt;!&ndash; INPUT &ndash;&gt;-->
+                <!--<com.app.aptap.ui.CustomTextView-->
+                    <!--android:id="@+id/location"-->
+                    <!--style="@style/EditTextStyleText"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_toRightOf="@+id/locationIcon"-->
+                    <!--android:background="@drawable/edit_text_grey_ul"-->
+                    <!--android:backgroundTint="@android:color/transparent"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:hint="@string/signup_location"-->
+                    <!--android:inputType="text"-->
+                    <!--android:padding="@dimen/padding_5_dp"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="@dimen/margin_left_right_10_dp"-->
+                <!--android:layout_marginRight="@dimen/margin_left_right_10_dp"-->
+                <!--android:background="@color/hintColor">-->
+
+            <!--</View>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/area_locationIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/location" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/area"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Area"
+                    android:padding="@dimen/padding_5_dp"
+                    android:inputType="text"/>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/area_Icon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/locationIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/location" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/location"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:padding="@dimen/padding_5_dp"
+                    android:inputType="text"/>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/flatlocationIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <com.app.aptap.ui.CustomTextView
+                android:id="@+id/signUpButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/app_icon_margin_login"
+                android:background="@drawable/buttons_rounded_corner_bg_white"
+                android:gravity="center"
+                android:text="@string/signup_button"
+                android:textAppearance="@style/signUpButtonStyle" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

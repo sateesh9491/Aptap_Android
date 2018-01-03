@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topCordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.aptap.activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/headerColor"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <EditText
+                android:id="@+id/globalSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/headerColor"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="Global Search"
+                android:inputType="text"
+                android:padding="@dimen/padding_5_dp"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+
+</android.support.design.widget.CoordinatorLayout>

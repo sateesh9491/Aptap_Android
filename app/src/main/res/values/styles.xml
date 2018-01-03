@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/headerColor</item>
+        <item name="colorPrimaryDark">@color/headerColor</item>
+        <item name="colorAccent">@color/headerColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="facebookButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="googleButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="EditTextStyleText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+    <style name="ToggelStyleText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="TextViewStyleTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="TextViewStyleContent" parent="@android:style/TextAppearance.Small">
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="TextViewStyleDate" parent="@android:style/TextAppearance.Small">
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="SearchEditTextStyleText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">true</item>
+    </style>
+
+    <style name="TextViewStyleSubTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="ListHeaderTextViewStyleTitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:cursorVisible">false</item>
+    </style>
+
+    <style name="signUpButtonStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="noticeHeadingStyle" parent="@android:style/TextAppearance.Holo.Medium"></style>
+
+    <style name="noticeContentStyle" parent="@android:style/TextAppearance.Small"></style>
+
+    <style name="addGroupBottonStyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+
+</resources>

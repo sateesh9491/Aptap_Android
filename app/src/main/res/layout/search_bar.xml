@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- INPUT -->
+<com.app.aptap.ui.CustomEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/globalSearch"
+    style="@style/SearchEditTextStyleText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/headerColor"
+    android:backgroundTint="@android:color/transparent"
+    android:hint="Global Search"
+    android:inputType="text"
+    android:padding="@dimen/padding_5_dp" />

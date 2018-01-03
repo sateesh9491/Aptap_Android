@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#F2ECEC</color>
+    <color name="colorDarkGrey">#999999</color>
+    <color name="memberHeaderRowColor">#999999</color>
+
+
+    <color name="primaryBackground">#FF4081</color>
+    <color name="facebook">#3b5998</color>
+    <color name="google">#d34836</color>
+    <color name="colorSignup">#FFFF00</color>
+    <color name="textColor">#333333</color>
+    <color name="hintColor">#999999</color>
+    <color name="divisionLine">#999999</color>
+
+    <color name="primaryButtonColor">#0093BF</color>
+    <color name="secondaryButtonColor">#F63248</color>
+    <color name="headerColor">#F63248</color>
+
+    <color name="nonSelectedDotColor">#d3d3d3</color>
+    <color name="selectedDotColor">#7e7e7e</color>
+
+    <color name="noticeBackgroundColor">#555555</color>
+
+    <color name="fab_colour">#F63248</color>
+    <color name="fab_colour_one">#0093BF</color>
+    <color name="fab_colour_two">#FFFF00</color>
+    <color name="fab_colour_three">#00FF00</color>
+    <color name="fab_colour_four">#FF00FF</color>
+
+
+
+</resources>

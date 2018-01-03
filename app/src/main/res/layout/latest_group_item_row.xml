@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/groupCircularRL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_margin="@dimen/padding_5_dp"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/memberProgressTop"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="75"
+            android:progressDrawable="@drawable/group_member_circle_two"
+            android:secondaryProgress="100" />
+
+        <ProgressBar
+            android:id="@+id/memberProgressBottom"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:padding="17dp"
+            android:progress="75"
+            android:progressDrawable="@drawable/group_member_circle_one"
+            android:secondaryProgress="100" />
+
+        <com.app.aptap.ui.CircleImageView
+            android:id="@+id/memberIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="27dp"
+            android:src="@drawable/events"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="5dp" />
+
+        <TextView
+            android:id="@+id/groupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="Aditya Narayan"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/groupTitle"
+            android:layout_alignLeft="@+id/memberProgressTop"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/memberProgressTop"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/groupIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/like_select" />
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:padding="5dp"
+                android:text="777"
+                android:textSize="12sp" />
+
+            <com.app.aptap.ui.CustomTextView
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:background="@drawable/buttons_rounded_corner_bg_white"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Add"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

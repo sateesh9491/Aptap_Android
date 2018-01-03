@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.fragment.MemberManagementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/headerColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10_dp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/addMemberMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/headerColor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/member_management_menu_h_w"
+                android:layout_height="@dimen/member_management_menu_h_w"
+                app:srcCompat="@drawable/home" />
+
+            <com.app.aptap.ui.CustomTextView
+                style="@style/noticeHeadingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/member_add_menu"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/importMemberMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/headerColor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/member_management_menu_h_w"
+                android:layout_height="@dimen/member_management_menu_h_w"
+                app:srcCompat="@drawable/import_icon" />
+
+            <com.app.aptap.ui.CustomTextView
+                style="@style/noticeHeadingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/member_import_menu"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/exportMemberMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/headerColor"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/member_management_menu_h_w"
+                android:layout_height="@dimen/member_management_menu_h_w"
+                app:srcCompat="@drawable/export" />
+
+            <com.app.aptap.ui.CustomTextView
+                style="@style/noticeHeadingStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="@string/member_export_menu"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/padding_5_dp"
+        android:layout_marginBottom="@dimen/padding_5_dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/member_list_header_row"></include>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_5_dp"
+            android:layout_marginRight="@dimen/padding_5_dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/memberManagementList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:overScrollMode="always"
+                app:useCompatPadding="true" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/fab"
+        app:backgroundTint="@color/fab_colour"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+
+</FrameLayout>

@@ -1,0 +1,412 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="com.app.aptap.fragment.CreateAssetFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_10_dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10_dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/assetType"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_asset_title_type"
+                    android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/assetTypeIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_asset_edit_text_height"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/assetName"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/create_asset_title_name"
+                    android:inputType="text">
+
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_asset_edit_text_height"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/capacityEmail"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/create_asset_title_capacity"
+                    android:inputType="textEmailAddress">
+
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/blockName"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Block Name"
+                    android:inputType="text"/>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/blockIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:orientation="horizontal">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/floor_no"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Floor"
+                    android:inputType="text"/>
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/floorIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/margin_10_dp"
+                    android:src="@drawable/down_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+
+
+
+
+
+
+            <!-- date time code-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_asset_edit_text_height"
+                    android:layout_weight="1">
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/startTimeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/startTimeText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/dateOfBirthIcon"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/create_asset_title_starttime"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                    <ImageView
+                        android:id="@+id/startTimeDownIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/create_asset_edit_text_height"
+                    android:layout_weight="1">
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/endTimeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/endTimeText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/dateOfBirthIcon"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:hint="@string/create_asset_title_endtime"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                    <ImageView
+                        android:id="@+id/endTimeDownIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <!-- ICON -->
+
+                <ImageView
+                    android:id="@+id/dateIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/event_image" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_asset_edit_text_height"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/assetPrice"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/create_asset_title_price"
+                    android:inputType="textEmailAddress">
+
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/create_asset_edit_text_height"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/assetEmail"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/create_asset_title_email"
+                    android:inputType="textEmailAddress">
+
+                </com.app.aptap.ui.CustomEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/hintColor">
+
+            </View>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:layout_marginBottom="@dimen/margin_10_dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/addButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/add_button_title"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/updateButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/update_button_title"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>

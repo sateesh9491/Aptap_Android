@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fabFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <terranovaproductions.newcomicreader.FloatingActionMenu
+        android:id="@+id/fab_menu_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/colorWhite">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHomePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:src="@drawable/fab"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHomeClassifieds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:src="@drawable/classifieds_select"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHomeEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:src="@drawable/events_select"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabHomePolls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="@dimen/margin_left_right_10_dp"
+            android:src="@drawable/polls_select"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorWhite"
+            app:fabSize="normal" />
+    </terranovaproductions.newcomicreader.FloatingActionMenu>
+
+</FrameLayout>

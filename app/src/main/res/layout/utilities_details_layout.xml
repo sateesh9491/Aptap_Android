@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/utilitiesDetailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_10_dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/electricityBillIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/electricityBill"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/electricityBillIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/signup_electricity_bill"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/gasConnectionIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/gasConnection"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/gasConnectionIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="@string/signup_gas_connection"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/interrnetConnectionIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/interrnetConnection"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/interrnetConnectionIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:hint="@string/signup_internet_bill"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/broadbandConnectionIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/broadbandConnection"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/broadbandConnectionIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:hint="@string/signup_broadband_bill"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/municipalPaymentsIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/municipalPayments"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/municipalPaymentsIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:hint="@string/signup_municipal_payments"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/colorWhite">
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/insurancePaymentIcon"
+            android:layout_width="@dimen/edit_text_image_height_width"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_5_dp"
+            android:src="@drawable/user" />
+
+        <!-- INPUT -->
+        <com.app.aptap.ui.CustomEditText
+            android:id="@+id/insurancePayment"
+            style="@style/EditTextStyleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/insurancePaymentIcon"
+            android:background="@drawable/edit_text_grey_ul"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="@string/signup_insurance_payments"
+            android:inputType="text"
+            android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        android:background="@color/hintColor">
+
+    </View>
+
+
+</LinearLayout>

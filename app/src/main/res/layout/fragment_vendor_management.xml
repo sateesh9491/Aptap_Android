@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.fragment.VendorManagementFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="@dimen/padding_5_dp"
+        android:layout_marginBottom="@dimen/padding_5_dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/vendor_list_header_row"></include>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding_5_dp"
+            android:layout_marginRight="@dimen/padding_5_dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vendorManagementList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="true"
+                android:overScrollMode="always"
+                app:useCompatPadding="true" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/createVendorFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/margin_left_right_10_dp"
+        app:srcCompat="@drawable/add_asset"
+        android:visibility="visible"/>
+
+
+</FrameLayout>

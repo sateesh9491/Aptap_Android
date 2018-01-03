@@ -1,0 +1,254 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10_dp"
+        android:layout_weight=".4"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/graphCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/admin_management_graph_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_5_dp"
+            android:orientation="horizontal">
+
+            <com.app.aptap.ui.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight=".5"
+                android:gravity="left|center_vertical"
+                android:text="New" />
+
+            <Spinner
+                android:id="@+id/graphFilter"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/adminChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_5_dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10_dp"
+        android:layout_weight=".6"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.app.aptap.ui.CustomTextView
+            android:id="@+id/circleCardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/circle_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/vendorCircularRL"
+                android:layout_width="@dimen/circle_width_height"
+                android:layout_height="120dp"
+                android:layout_margin="@dimen/padding_5_dp">
+
+                <ProgressBar
+                    android:id="@+id/vendorCircularProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/circle_width_height"
+                    android:layout_height="@dimen/circle_width_height"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/vendor_circle"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/vendorProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/vendorCircularProgressbar"
+                    android:layout_alignLeft="@id/vendorCircularProgressbar"
+                    android:layout_alignRight="@id/vendorCircularProgressbar"
+                    android:layout_alignTop="@id/vendorCircularProgressbar"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="4785"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/vendorTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/vendorCircularProgressbar"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/circle_vendor" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/memberCircularRL"
+                android:layout_width="@dimen/circle_width_height"
+                android:layout_height="120dp">
+
+                <ProgressBar
+                    android:id="@+id/memberCircularProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/circle_width_height"
+                    android:layout_height="@dimen/circle_width_height"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/member_circle"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/memberProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/memberCircularProgressbar"
+                    android:layout_alignLeft="@id/memberCircularProgressbar"
+                    android:layout_alignRight="@id/memberCircularProgressbar"
+                    android:layout_alignTop="@id/memberCircularProgressbar"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="1263"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/memberTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/memberCircularProgressbar"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/circle_member" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/issueCircularRL"
+                android:layout_width="@dimen/circle_width_height"
+                android:layout_height="120dp">
+
+                <ProgressBar
+                    android:id="@+id/issueCircularProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/circle_width_height"
+                    android:layout_height="@dimen/circle_width_height"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/issue_circle"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/issueProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/issueCircularProgressbar"
+                    android:layout_alignLeft="@id/issueCircularProgressbar"
+                    android:layout_alignRight="@id/issueCircularProgressbar"
+                    android:layout_alignTop="@id/issueCircularProgressbar"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="1263"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/issueTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/issueCircularProgressbar"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/circle_issue" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/assetCircularRL"
+                android:layout_width="@dimen/circle_width_height"
+                android:layout_height="120dp">
+
+                <ProgressBar
+                    android:id="@+id/assetCircularProgressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="@dimen/circle_width_height"
+                    android:layout_height="@dimen/circle_width_height"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/asset_circle"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/assetProgressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/assetCircularProgressbar"
+                    android:layout_alignLeft="@id/assetCircularProgressbar"
+                    android:layout_alignRight="@id/assetCircularProgressbar"
+                    android:layout_alignTop="@id/assetCircularProgressbar"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="1263"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/assetTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/assetCircularProgressbar"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/circle_asset" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

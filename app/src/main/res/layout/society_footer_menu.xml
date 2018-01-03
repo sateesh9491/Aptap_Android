@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footerSocietyTabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footer_icon_w_h"
+    android:layout_gravity="bottom|end"
+    android:layout_marginTop="@dimen/padding_5_dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_5_dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footerGroups"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/group" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#d90c0c"
+            android:layout_marginTop="@dimen/padding_5_dp"
+            android:layout_below="@+id/footerGroups"
+            android:text="Groups" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footerEvents"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="@dimen/padding_5_dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/footer_events" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#d90c0c"
+            android:layout_marginTop="@dimen/padding_5_dp"
+            android:layout_below="@+id/footerEvents"
+            android:text="Events" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/footerPolls"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/footer_pols" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#d90c0c"
+            android:layout_marginTop="7sp"
+
+            android:layout_below="@+id/footerPolls"
+            android:text="Poll" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/footerClassifieds"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/more_select" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#d90c0c"
+            android:layout_marginTop="@dimen/padding_5_dp"
+            android:layout_below="@+id/footerClassifieds"
+            android:text="More" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

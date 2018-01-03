@@ -1,0 +1,68 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.aptap.fragment.WebLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:id="@+id/LL1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/QR_text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F63248"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/LL1">
+
+        <SurfaceView
+            android:id="@+id/cameraPreview"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="480px" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_below="@+id/cameraPreview"
+            android:id="@+id/QrResult"
+            android:layout_marginTop="20dp"
+            android:text="Qr Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_below="@+id/cameraPreview"
+            android:id="@+id/uniqueId"
+            android:layout_marginTop="20dp"
+            android:text="Unique Id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

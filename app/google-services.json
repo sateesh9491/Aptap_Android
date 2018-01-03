@@ -1,0 +1,78 @@
+{
+  "project_info": {
+    "project_number": "197338814076",
+    "firebase_url": "https://aptap-176618.firebaseio.com",
+    "project_id": "aptap-176618",
+    "storage_bucket": "aptap-176618.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197338814076:android:c760bb0c76e77bb6",
+        "android_client_info": {
+          "package_name": "com.app.aptap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197338814076-cqtgj0rtll4364oujvari5e754ojpmon.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.aptap",
+            "certificate_hash": "b3e450f5d726d7e7ddb950f361936fced0a965e7"
+          }
+        },
+        {
+          "client_id": "197338814076-pcu8rem09iggr62mb65b18kbmqc08jlm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.aptap",
+            "certificate_hash": "b917db0439b994c2abe407acfc30dacbedb8b630"
+          }
+        },
+        {
+          "client_id": "197338814076-pnubcbfv3ov2ujp2lghi9st4lqff5k7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.aptap",
+            "certificate_hash": "6a9f2bf1d868260ceb95eb6f07fb60f7c4f92539"
+          }
+        },
+        {
+          "client_id": "197338814076-dh1uq3qpvectud0rgubt6urtdtitv3jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuj9FOjMrhEsnY8-70AdzEyhn_WwU5cVk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197338814076-0ib2jqgj3lfbprfis45c15prmac4d643.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.aptap"
+              }
+            },
+            {
+              "client_id": "197338814076-dh1uq3qpvectud0rgubt6urtdtitv3jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

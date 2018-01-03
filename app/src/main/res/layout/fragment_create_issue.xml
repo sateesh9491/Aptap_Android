@@ -1,0 +1,481 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="com.app.aptap.fragment.CreateIssueFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_10_dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10_dp"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@color/colorWhite">
+
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/issueTitle"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="@string/text_issue_title"
+                        android:inputType="numberSigned">
+
+                    </com.app.aptap.ui.CustomEditText>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/issueHouseSwitch"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:checked="true"
+                        android:text="@string/text_vendor_in_house" />
+
+                    <Switch
+                        android:id="@+id/issueSocietySwitch"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="@string/text_society_switch" />
+
+
+                </LinearLayout>
+
+                <!-- INPUT -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="horizontal">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/categoryType"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/issue_header_category"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/categoryTypeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <!--<Spinner
+                    android:id="@+id/categoryType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="left"
+                    android:foregroundGravity="left"
+                    android:textAlignment="textStart"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp" />-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="vertical">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/descriptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_issue_description" />
+
+                    <com.app.aptap.ui.CustomEditText
+                        android:id="@+id/inputDescription"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="left"
+                        android:hint="@string/text_type_here"
+                        android:inputType="text"></com.app.aptap.ui.CustomEditText>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="horizontal">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/addressLine1Type"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/create_member_block_title"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/addressLine1Icon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <!--<Spinner
+                    android:id="@+id/addressLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp" />-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor" />
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/addressLine2"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/text_address_line"
+                    android:inputType="text">
+
+                </com.app.aptap.ui.CustomEditText>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal">
+
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/fileAttachment"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/text_issue_file_attachment"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/attachmentIcon"
+                        android:layout_width="35dp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/user" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/updateButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/update_button_title"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_vendor_assignment" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                    android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                    android:orientation="horizontal">
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/vendorAssignmentType"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:hint="@string/text_vendor_assignment"
+                        android:inputType="text"></com.app.aptap.ui.CustomTextView>
+
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/vendorAssignmentIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/margin_10_dp"
+                        android:src="@drawable/down_arrow" />
+
+                </LinearLayout>
+
+                <!--<Spinner
+                    android:id="@+id/vendorAssignment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />-->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    style="@style/ToggelStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-5dp"
+                    android:text="Estimated time, Procurement required" />
+
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/updateButtonTwo"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_margin="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="@string/update_button_title"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_vendor_assignment" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Option 01" />
+
+                    <CheckBox
+                        android:id="@+id/adminOption"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Bill Attachment" />
+
+                    <CheckBox
+                        android:id="@+id/billAttachment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginBottom="@dimen/margin_10_dp"
+                android:gravity="center">
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/issueFeedbackButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="Feedback"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/issueCloseeButton"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginLeft="@dimen/margin_10_dp"
+                    android:background="@drawable/buttons_rounded_corner_bg_white"
+                    android:gravity="center"
+                    android:text="Close"
+                    android:textAppearance="@style/signUpButtonStyle" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,571 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    tools:context="com.app.aptap.fragment.CreateEventFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_10_dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10_dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite">
+
+                <com.app.aptap.ui.CircleImageView
+                    android:layout_width="@dimen/home_profile_image_h_w"
+                    android:layout_height="@dimen/home_profile_image_h_w"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/events"
+                    app:civ_border_color="@color/headerColor"
+                    app:civ_border_width="2dp" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/userName"
+                    style="@style/TextViewStyleTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_5_dp"
+                    android:text="Name">
+                    <!--<requestFocus />-->
+                </com.app.aptap.ui.CustomTextView>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_title" />
+
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/postTitle"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/post_title_write_msg"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"></com.app.aptap.ui.CustomEditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_description" />
+
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/postDescription"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="left"
+                    android:hint="@string/post_description_write_msg"
+                    android:inputType="text"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:minLines="3"></com.app.aptap.ui.CustomEditText>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor">
+
+                </View>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/startDateIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".15"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/startDateText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".85"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/create_event_title_startdate"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/startTimeText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".85"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/create_asset_title_starttime"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                    <ImageView
+                        android:id="@+id/startTimeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".15"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10_dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!-- ICON -->
+                    <ImageView
+                        android:id="@+id/endDateIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".15"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/endDateText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".85"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/create_event_title_enddate"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <!-- INPUT -->
+                    <com.app.aptap.ui.CustomTextView
+                        android:id="@+id/endTimeText"
+                        style="@style/EditTextStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".85"
+                        android:background="@drawable/edit_text_grey_ul"
+                        android:backgroundTint="@android:color/transparent"
+                        android:clickable="false"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/create_asset_title_endtime"
+                        android:inputType="time"
+                        android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+                    <ImageView
+                        android:id="@+id/endTimeIcon"
+                        android:layout_width="@dimen/edit_text_image_height_width"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".15"
+                        android:padding="@dimen/padding_5_dp"
+                        android:src="@drawable/events" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10_dp">
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_post_type" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioPostGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/postPublic"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/text_post_public_type" />
+
+                    <RadioButton
+                        android:id="@+id/postPrivate"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_post_private_type" />
+
+                    <RadioButton
+                        android:id="@+id/postSociety"
+                        style="@style/ToggelStyleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/text_post_society_type" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite">
+
+
+                <ImageView
+                    android:id="@+id/locationEventIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/location" />
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/locationEventText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/locationIcon"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/signup_location"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_10_dp">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/attendeesIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/groups" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/attendeesText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_atendees"
+                    android:inputType="number"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/priceIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/price" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/priceText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_price"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_10_dp">
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/addInvitesIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/groups" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/addInvitesText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_add_invitees"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/sendSMSIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/phone" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/sendSMSText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_send_sms"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/margin_left_right_10_dp"
+                android:layout_marginRight="@dimen/margin_left_right_10_dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_10_dp">
+
+                <!-- ICON -->
+                <CheckBox
+                    android:id="@+id/ticketIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"/>
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/ticketText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_ticket"
+                    android:inputType="text"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomTextView>
+
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/ticketPriceIcon"
+                    android:layout_width="@dimen/edit_text_image_height_width"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5_dp"
+                    android:src="@drawable/price" />
+
+                <!-- INPUT -->
+                <com.app.aptap.ui.CustomEditText
+                    android:id="@+id/ticketPriceText"
+                    style="@style/EditTextStyleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateOfBirthIcon"
+                    android:layout_weight=".25"
+                    android:background="@drawable/edit_text_grey_ul"
+                    android:backgroundTint="@android:color/transparent"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/create_event_title_ticket_cost"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/padding_5_dp"></com.app.aptap.ui.CustomEditText>
+
+
+            </LinearLayout>
+
+            <!-- INPUT -->
+            <com.app.aptap.ui.CustomTextView
+                android:id="@+id/sendEventButton"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/margin_10_dp"
+                android:background="@drawable/buttons_rounded_corner_bg_white"
+                android:gravity="center"
+                android:text="@string/send_event_button_title"
+                android:textAppearance="@style/signUpButtonStyle" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

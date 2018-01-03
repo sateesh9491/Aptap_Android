@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.app.aptap.activity.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/personalDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_up_row_height"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:layout_marginTop="@dimen/margin_10_dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorWhite"
+                android:onClick="togglePersonalContents">
+
+                <ImageView
+                    android:id="@+id/personalDetailsIcon"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/personalDetailsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/personalDetailsIcon"
+                    android:layout_toRightOf="@+id/personalDetailsIcon"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_personal_details" />
+
+                <ImageView
+                    android:id="@+id/personalDetailsArrow"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/right_arrow_outline" />
+
+            </RelativeLayout>
+
+
+            <include
+                layout="@layout/personal_details_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/securityDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_up_row_height"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:layout_marginBottom="2dp"
+                android:onClick="toggleSecurityContents"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:id="@+id/securityDetailsIcon"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/securityDetailsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/securityDetailsIcon"
+                    android:layout_toRightOf="@+id/securityDetailsIcon"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_security_details" />
+
+                <ImageView
+                    android:id="@+id/securityDetailsArrow"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/right_arrow_outline" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/security_details_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <RelativeLayout
+                android:id="@+id/utilitiesDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_up_row_height"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:layout_marginBottom="2dp"
+                android:onClick="toggleUtilitiesContents"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:id="@+id/utilitiesDetailsIcon"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/utilitiesDetailsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/utilitiesDetailsIcon"
+                    android:layout_toRightOf="@+id/utilitiesDetailsIcon"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_utilities_details" />
+
+                <ImageView
+                    android:id="@+id/utilitiesDetailsArrow"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/right_arrow_outline" />
+
+            </RelativeLayout>
+            <include
+                layout="@layout/utilities_details_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/interestsDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sign_up_row_height"
+                android:layout_marginLeft="@dimen/margin_10_dp"
+                android:layout_marginRight="@dimen/margin_10_dp"
+                android:layout_marginBottom="2dp"
+                android:onClick="toggleInterestsContents"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:id="@+id/interestsDetailsIcon"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/user" />
+
+                <com.app.aptap.ui.CustomTextView
+                    android:id="@+id/interestsDetailsTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_toEndOf="@+id/interestsDetailsIcon"
+                    android:layout_toRightOf="@+id/interestsDetailsIcon"
+                    android:gravity="center_vertical"
+                    android:text="@string/signup_interests_details" />
+
+                <ImageView
+                    android:id="@+id/interestsDetailsArrow"
+                    android:layout_width="@dimen/sign_up_row_height"
+                    android:layout_height="@dimen/sign_up_row_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_5_dp"
+                    app:srcCompat="@drawable/right_arrow_outline" />
+
+            </RelativeLayout>
+
+            <include
+                layout="@layout/interests_details_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.app.aptap.ui.CustomTextView
+                android:id="@+id/signUpButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/app_icon_margin_login"
+                android:background="@drawable/buttons_rounded_corner_bg_white"
+                android:gravity="center"
+                android:text="@string/signup_button"
+                android:textAppearance="@style/signUpButtonStyle" />
+
+
+            <!--<ImageView
+                android:id="@+id/imageView"
+                android:layout_width="220dp"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/apptap_logo" />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
