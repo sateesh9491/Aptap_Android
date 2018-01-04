@@ -1,4 +1,4 @@
-package droidmentor.retrofitexample;
+package com.app.aptap.model;
 
 import android.app.Activity;
 import android.app.ProgressDialog;

@@ -1,4 +1,4 @@
-package Json_Model;
+package com.app.aptap.model;
 
 /**
  * Created by Jaison on 16/11/16.

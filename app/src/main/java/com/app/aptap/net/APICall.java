@@ -135,23 +135,5 @@ public class APICall {
     }
 
 
-    public void getQrVerificationApi(ApiInterface apiInterface, String getQrCode, String getUniqueId, final APICallback apiCallback) {
-        callAPI = apiInterface.getQrCode(getQrCode,getUniqueId);
-        callAPI.enqueue(new Callback<ResponseBody>() {
-            @Override
-            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                Log.d(TAG, new StringBuilder().append("getQrVerificationApi:onResponse:-").append(response.message()).append(response.code()).append(response.isSuccessful()).toString());
-                apiCallback.onSuccess(response);
-            }
-
-            @Override
-            public void onFailure(Call call, Throwable t) {
-                Log.d(TAG, new StringBuilder().append("getQrVerificationApi:onFailure:-").append(t.getMessage()).toString());
-                call.cancel();
-                apiCallback.onFailure(t);
-            }
-        });
-
-    }
 
 }

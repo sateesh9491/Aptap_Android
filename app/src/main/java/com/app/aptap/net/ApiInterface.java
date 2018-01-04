@@ -1,5 +1,9 @@
 package com.app.aptap.net;
 
+import com.app.aptap.model.UserDetails;
+
+import java.util.Map;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
@@ -8,6 +12,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Query;
+import retrofit2.http.QueryMap;
 
 /**
  * Created by aditya on 8/26/2017.
@@ -50,5 +55,5 @@ public interface ApiInterface {
 
     @Headers("Content-Type: application/json")
     @GET("genQrVerification")
-    public Call<ResponseBody> getQrCode(@Query("qrcode") String qrcode, @Query("uniqueId") String uniqueId);
+    public Call<UserDetails> getQrCode(@QueryMap Map<String, String> params);
 }

@@ -105,7 +105,6 @@ public class WebLogin extends MasterFragment {
 
         cameraPreview = (SurfaceView)qrview. findViewById(R.id.cameraPreview);
         txtResult = (TextView)qrview. findViewById(R.id.QrResult);
-        uniqueId = (TextView)qrview. findViewById(R.id.uniqueId);
 
         barcodeDetector = new BarcodeDetector.Builder(getActivity())
                 .setBarcodeFormats(Barcode.QR_CODE)
@@ -167,56 +166,11 @@ public class WebLogin extends MasterFragment {
             }
         });
 
-        Qrcode=txtResult.getText().toString();
-
-
-        new APICall().getQrVerificationApi(getAPIInterfaceService(),  Qrcode,"726d99e9-93a7-4884-acf1-29457684c334", new APICallback() {
-            @Override
-            public void onSuccess(Response<ResponseBody> response) {
-                Log.d(TAG, "callAPIFunction:onSuccess:responseStr:sendQr:-" + response);
-                OTPResponse otpResponse = new OTPResponse();
-                if (response.isSuccessful()) {
-                    try {
-                        String responseStr = response.body().string();
-                        Log.d(TAG, "callAPIFunction:onSuccess:responseStr:sendQr:-" + responseStr);
-                        Gson gson = new Gson();
-                        otpResponse = gson.fromJson(responseStr, OTPResponse.class);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (JsonParseException e) {
-                        e.printStackTrace();
-                    }
-                }
-
-                if (otpResponse.getStatus().equals(API_STATUS_SUCCESS)) {
-                    //fgLayout.setVisibility(View.GONE);
-                    // mobileNumberLayout.setVisibility(View.GONE);
-                    //otpLayout.setVisibility(View.VISIBLE);
-                } else {
-                    //fails dialog will added lter.
-
-                    Toast.makeText(getActivity(), "OTP Failed", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onFailure(Throwable throwable) {
-                Log.d(TAG, "callAPIFunction:onFailure:responseStr:sendotp:-" + throwable.getMessage().toString());
-
-                Toast.makeText(getActivity(), throwable.getMessage(), Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
 
 
         return qrview;
     }
 
-    public ApiInterface getAPIInterfaceService() {
-        apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        return apiInterface;
-    }
 
 
 
