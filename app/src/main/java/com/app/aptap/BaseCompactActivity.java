@@ -70,6 +70,8 @@ public abstract class BaseCompactActivity extends AppCompatActivity {
 
     }
 
+
+
     public void changeStatusBarColor() {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             Window window = this.getWindow();
